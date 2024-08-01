@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Predictor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-leaf"></i> Plant Disease Predictor</h1>
+    </header>
+    <main>
+        <section id="upload-section" class="card">
+            <h2><i class="fas fa-upload"></i> Upload a Plant Image</h2>
+            <p>Select a clear image of the affected plant part for accurate prediction.</p>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="predict-button"><i class="fas fa-search"></i> Predict Disease</button>
+        </section>
+        <section id="result-section" class="card" style="display: none;">
+            <h2><i class="fas fa-chart-bar"></i> Prediction Result</h2>
+            <div class="image-container">
+                <img id="uploaded-image" src="" alt="Uploaded plant image">
+            </div>
+            <div id="prediction-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plant Disease Predictor. All rights reserved. <i class="fas fa-seedling"></i></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
